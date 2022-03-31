@@ -61,7 +61,7 @@ vendor/etc/permissions/android.software.cant_save_state.xml
 ## Composer - from sabrina_prod_stable-user 12 STTE 240615 007 12033466 release-keys
 vendor/bin/hw/android.hardware.graphics.composer@2.4-service.droidlogic|2e9a56800bc0cbb1e3aa83506c41c7f57193b9fa
 vendor/etc/init/android.hardware.graphics.composer@2.4-service.droidlogic.rc|689db5f70830b552185429f04b9dba2f2b51bb02
--vendor/etc/vintf/manifest/android.hardware.graphics.composer@2.4-service.droidlogic.xml|d8c4e120e0b771b05bb38c3cfe91d983e511c7ea
+vendor/etc/vintf/manifest/android.hardware.graphics.composer@2.4-service.droidlogic.xml|d8c4e120e0b771b05bb38c3cfe91d983e511c7ea
 vendor/lib/android.hardware.graphics.composer@2.1-resources-vendor.so|62eba15c9159c9f8b3a071a8efc58106b5cc2737
 vendor/lib/android.hardware.graphics.composer@2.2-resources-vendor.so|01fc678f2966779cc3a5c3a7d1d156c8d0a67572
 vendor/lib/hw/hwcomposer.amlogic.so|1822dc9b6ece03c5b6fda4a70fcba8dde0b98812|03cb651f9ede2c1ff05bdc52fc03ff557e110ed2
