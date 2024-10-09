@@ -19,6 +19,7 @@ vendor/lib/libnetflixplugin.so|bc7e573c387a40222f78008b391ca24140f734a8
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.netflix.xml|2ce709a302f21d2cc5532e35d32ce1db03827f56
 
 ## TEE
+vendor/bin/hw/android.hardware.security.keymint-service.amlogic|c394595ccf1db8a3e882b431ffabe6eff5ed10c9
 vendor/bin/tee-supplicant|37274543a5c6b3f926b1a3658097369f6aae6b20
 vendor/bin/tee_hdcp|ee8e286d6d5bc316afa0fb335e0a0319097a6f76
 vendor/bin/tee_key_inject|7d163d08e830e5837046dcf92c24bc1dbcbfbc90
