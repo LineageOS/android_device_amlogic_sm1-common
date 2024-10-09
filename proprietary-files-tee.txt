@@ -1,42 +1,33 @@
 ## All blobs from this list, unless pinned and noted as otherwise,
-## are from adt3-user 13 TTT1.230205.001 9565391 release-keys.
-
-## OEM Lock
-vendor/bin/hw/android.hardware.oemlock@1.0-service.droidlogic
-vendor/etc/init/android.hardware.oemlock@1.0-service.droidlogic.rc
-vendor/etc/vintf/manifest/android.hardware.oemlock@1.0-service.droidlogic.xml
+## are from sabrina_prod_stable-user 12 STTE.240615.007 12033466 release-keys.
 
 ## Playready
-vendor/bin/hw/android.hardware.drm@1.4-service.playready
-vendor/etc/drm/playready/bgroupcert.dat
-vendor/etc/drm/playready/zgpriv.dat
-vendor/etc/drm/playready/zgpriv_protected.dat
-vendor/etc/init/android.hardware.drm@1.4-service.playready.rc
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.playready.xml
-vendor/lib/libplayready.so
-vendor/lib/libplayreadymediadrmplugin.so
+vendor/bin/hw/android.hardware.drm@1.4-service.playready|f476423c9f45cf46a92dd5a8e4d6591525043af8
+vendor/etc/drm/playready/bgroupcert.dat|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/etc/drm/playready/zgpriv.dat|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/etc/drm/playready/zgpriv_protected.dat|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/etc/init/android.hardware.drm@1.4-service.playready.rc|f96c2a3792ec7448ddc8a6560883f3db55851f51
+vendor/lib/libplayready.so|79b2979afcb4ff6375f2a9eef0309b47c4ae53ac
+vendor/lib/libplayreadymediadrmplugin.so|e541a0693fdb41d02a11890b17d6faa1873ec43a
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.playready.xml|77d03cad678f8af87d8646877fab7b17d03c4b25
 
-## Netflix - from wade - sti6130d350-user 12 SC 20240419 release-keys
-system/system/etc/sysconfig/netflix.xml|a63698bfa31a9261eb329d0fbbc975faaff37b68
-vendor/bin/hw/android.hardware.drm@1.4-service.netflix|a142b52dc546c591acefa3a1adf19793e0254b71
+## Netflix
+vendor/bin/hw/android.hardware.drm@1.4-service.netflix|91814e833cdf08d3344dbfd5ae27df5b2c82c958
 vendor/etc/init/android.hardware.drm@1.4-service.netflix.rc|0cdc8bcf31d8300f8f54a9150d103ae6c399dd89
 vendor/etc/permissions/droidlogic.software.netflix.xml|f9798f7873372120d392377a55a5fe61279a98a7
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.netflix.xml|2ce709a302f21d2cc5532e35d32ce1db03827f56
-vendor/lib/libnetflixplugin.so|660811fd9186157912b715132da15289793ec5b2
+vendor/lib/libnetflixplugin.so|bc7e573c387a40222f78008b391ca24140f734a8
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.netflix.xml|2ce709a302f21d2cc5532e35d32ce1db03827f56
 
 ## TEE
-vendor/bin/tee-supplicant
-vendor/bin/tee_preload_fw
-vendor/etc/init/android.hardware.security.keymint-service.amlogic.rc
-vendor/etc/init/tee-supplicant.rc
-vendor/etc/init/tee_preload_fw.rc
-vendor/etc/permissions/android.hardware.hardware_keystore.amlogic.xml
-vendor/etc/vintf/manifest/android.hardware.security.keymint-service.amlogic.xml
-vendor/lib/libtee_load_video_fw.so
-vendor/lib/libteec.so
-
-## TEE HDCP - from wade - sti6130d350-user 12 SC 20240419 release-keys
-vendor/bin/tee_hdcp|906be1f4a6cbc7e5d5e6c7f9c75510738c4a3d14
-vendor/bin/tee_key_inject|4048719b00ad7168599616742919c8b8a60897fa
-vendor/etc/init/tee_hdcp.rc|654b0e242fdef6ac9ca03cd0899779355cc29312
-vendor/etc/init/tee_key_inject.rc|f312f1afad60ca32db4bea28b1132c0a93968254
+vendor/bin/tee-supplicant|37274543a5c6b3f926b1a3658097369f6aae6b20
+vendor/bin/tee_hdcp|ee8e286d6d5bc316afa0fb335e0a0319097a6f76
+vendor/bin/tee_key_inject|7d163d08e830e5837046dcf92c24bc1dbcbfbc90
+vendor/bin/tee_preload_fw|cf7574e36cb1b2c341f5a9044a32460be0ff2891
+vendor/etc/init/android.hardware.security.keymint-service.amlogic.rc|c0d12ddad0ee0d0a20e3a3b272e8724c384b5de6
+vendor/etc/init/tee-supplicant.rc|7ce2de3854fa2d2cb90d299a3308a5c243bd666b|404e8c7ab438c7921ca58ecde3390f6009327f09
+vendor/etc/init/tee_hdcp.rc|0e25d3a4e76d7cf0ea6f66a4cb039377a0c5ed92
+vendor/etc/init/tee_preload_fw.rc|c643706088f6379749f0eb344c497b49eb547214
+vendor/etc/permissions/android.hardware.hardware_keystore.amlogic.xml|672d9b78a504fbd1eef56853e710e7986a3cd2f8
+vendor/lib/libtee_load_video_fw.so|a85c4540672bd81840453c36bf9091961f86571b
+vendor/lib/libteec.so|2250a64472d10c5e2f28688caa597864bec75919
+-vendor/etc/vintf/manifest/android.hardware.security.keymint-service.amlogic.xml|d8f1dec254cad9c5111ced096d4fb417e74fb59a
