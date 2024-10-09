@@ -11,13 +11,6 @@ vendor/lib/libplayready.so|79b2979afcb4ff6375f2a9eef0309b47c4ae53ac
 vendor/lib/libplayreadymediadrmplugin.so|e541a0693fdb41d02a11890b17d6faa1873ec43a
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.playready.xml|77d03cad678f8af87d8646877fab7b17d03c4b25
 
-## Netflix
-vendor/bin/hw/android.hardware.drm@1.4-service.netflix|91814e833cdf08d3344dbfd5ae27df5b2c82c958
-vendor/etc/init/android.hardware.drm@1.4-service.netflix.rc|0cdc8bcf31d8300f8f54a9150d103ae6c399dd89
-vendor/etc/permissions/droidlogic.software.netflix.xml|f9798f7873372120d392377a55a5fe61279a98a7
-vendor/lib/libnetflixplugin.so|bc7e573c387a40222f78008b391ca24140f734a8
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.netflix.xml|2ce709a302f21d2cc5532e35d32ce1db03827f56
-
 ## TEE
 vendor/bin/hw/android.hardware.security.keymint-service.amlogic|c394595ccf1db8a3e882b431ffabe6eff5ed10c9
 vendor/bin/tee-supplicant|37274543a5c6b3f926b1a3658097369f6aae6b20
