@@ -16,6 +16,24 @@
       "message": "Is sabrina old enough to still depend on ndk_platform?",
       "revId": "906da0383a6b07d0c61fb425fdfc2eebcde958ee",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c037450c_ee4ed67e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-10-10T16:58:53Z",
+      "side": 1,
+      "message": "Yes, android 12, and yeah, the issue is still present. It won\u0027t be when 14 drops, but we arent\u0027 there yet.",
+      "parentUuid": "6f392962_4434130a",
+      "revId": "906da0383a6b07d0c61fb425fdfc2eebcde958ee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
