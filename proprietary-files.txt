@@ -1,9 +1,8 @@
 ## All blobs from this list, unless pinned and noted as otherwise,
-## are from adt3-user 13 TTT1.230205.001 9565391 release-keys.
+## are from sabrina_prod_stable-user 12 STTE.240615.007 12033466 release-keys.
 
 ## ATV specific
 product/etc/permissions/privapp-permissions-atv-product.xml
-product/priv-app/Adt3LauncherCustomization/Adt3LauncherCustomization.apk
 
 ## Audio
 vendor/lib/hw/audio.primary.amlogic.so
@@ -30,29 +29,20 @@ vendor/lib/soundfx/libavl.so
 vendor/lib/soundfx/libbalance.so
 vendor/lib/soundfx/libdbx.so
 vendor/lib/soundfx/libhpeqwrapper.so
-vendor/lib/soundfx/libms12dapwrapper.so
 vendor/lib/soundfx/libsrswrapper.so
 vendor/lib/soundfx/libtreblebasswrapper.so
 vendor/lib/soundfx/libvirtualsurround.so
 vendor/lib/soundfx/libvirtualx.so
 
 ## Bluetooth
-product/etc/permissions/privapp-permissions-deadpool.xml
-product/priv-app/DeadpoolService/DeadpoolService.apk
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-droidlogic
 vendor/etc/bluetooth/auto_pairing.conf
 vendor/etc/bluetooth/blacklist.conf
-vendor/etc/bluetooth/bt_vendor.conf
-vendor/etc/bluetooth/bt_vendor_usb.conf
-vendor/etc/init/android.hardware.bluetooth@1.0-service-droidlogic.rc
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-droidlogic.so
 
 ## Camera
 vendor/lib/hw/camera.amlogic.so
 vendor/lib/libispaaa.so
 
 ## Common
-vendor/bin/ddrtest.sh
 vendor/etc/lowmemorykiller.txt
 vendor/etc/lowmemorykiller_2G.txt
 vendor/etc/lowmemorykiller_512M.txt
