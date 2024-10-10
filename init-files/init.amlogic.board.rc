@@ -1,5 +1,10 @@
 import /vendor/etc/init/hw/init.amlogic.usb.rc
 
+on early-init
+    loglevel 3
+
+on init
+
 on post-fs-data
     insmod /vendor/lib/modules/mali.ko
     insmod /vendor/lib/modules/aml_hardware_dmx.ko
@@ -10,6 +15,8 @@ on boot
     write /proc/sys/net/core/wmem_max 12582912
     write /proc/sys/net/core/rmem_default 2097152
     write /proc/sys/net/core/wmem_default 2097152
+    write /sys/module/decoder_common/parameters/max_di_instance 1
     write /sys/module/amvdec_mh264/parameters/reorder_dpb_size_margin 9
     write /sys/module/amvdec_h265/parameters/dynamic_buf_num_margin 9
     write /sys/module/amvdec_vp9/parameters/max_buf_num 12
+    write /sys/class/codec_mm/config "codec_mm.default_tvp_pool_size_0=97517568"
