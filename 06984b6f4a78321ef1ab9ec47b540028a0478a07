@@ -70,6 +70,30 @@
       },
       "revId": "06984b6f4a78321ef1ab9ec47b540028a0478a07",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "86a9ec8b_1a9697e9",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-10-10T17:55:45Z",
+      "side": 0,
+      "message": "How about the actual impl?",
+      "parentUuid": "23de3ecd_60f5f57e",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 63
+      },
+      "revId": "06984b6f4a78321ef1ab9ec47b540028a0478a07",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
