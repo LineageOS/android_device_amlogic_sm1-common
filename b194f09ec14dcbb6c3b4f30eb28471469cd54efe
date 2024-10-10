@@ -16,6 +16,40 @@
       "message": "untested",
       "revId": "b194f09ec14dcbb6c3b4f30eb28471469cd54efe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4be04237_c4b62937",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-10-10T17:53:53Z",
+      "side": 1,
+      "message": "Unpin",
+      "revId": "b194f09ec14dcbb6c3b4f30eb28471469cd54efe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ba9fd099_ff2974ca",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-10-10T17:53:53Z",
+      "side": 1,
+      "message": "Unpin",
+      "revId": "b194f09ec14dcbb6c3b4f30eb28471469cd54efe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
