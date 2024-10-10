@@ -1,0 +1,5 @@
+## Platform
+ro.boot.aml_secure_check=false
+
+## PQ
+persist.sys.PQ.enable=true
