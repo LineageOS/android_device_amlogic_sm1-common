@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8de463d0_7be96718",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-10-10T18:34:52Z",
+      "side": 1,
+      "message": "I very much want to do this in a stage _after_ we swap trees. Want to make sure all works before we deviate too hard.",
+      "revId": "e941e4f951db2bedd8200c75f66c3acae2f4379b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
