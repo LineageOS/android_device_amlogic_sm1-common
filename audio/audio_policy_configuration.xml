@@ -56,31 +56,40 @@
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
+                <mixPort name="direct pcm" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT">
+                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                             samplingRates="32000,44100,48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+                </mixPort>
                 <mixPort name="tunnel pcm" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_HW_AV_SYNC">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="32000,44100,48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
-                <mixPort name="multichannel output" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_HW_AV_SYNC">
+                <mixPort name="direct output" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT">
                     <profile name=""/>
                 </mixPort>
-                <mixPort name="multichannel direct" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT">
+                <mixPort name="tunnel direct output" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_HW_AV_SYNC">
                     <profile name=""/>
+                </mixPort>
+                <mixPort name="mmap_no_irq_out" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_MMAP_NOIRQ">
+                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                             samplingRates="48000"/>
                 </mixPort>
                 <mixPort name="primary input" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000"
                              channelMasks="AUDIO_CHANNEL_IN_MONO,AUDIO_CHANNEL_IN_STEREO"/>
                 </mixPort>
-                <mixPort name="a2dp direct" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT">
-                    <profile name=""/>
-                </mixPort>
                 <mixPort name="tunnel a2dp" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_HW_AV_SYNC">
                     <profile name=""/>
+                </mixPort>
+                <mixPort name="stub output" role="source" flags="AUDIO_OUTPUT_FLAG_PRIMARY">
+                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
             </mixPorts>
             <devicePorts>
                 <!-- Output devices declaration, i.e. Sink DEVICE PORT -->
-                <devicePort tagName="HDMI Out" type="AUDIO_DEVICE_OUT_AUX_DIGITAL" role="sink" encodedFormats= "AUDIO_FORMAT_PCM_16_BIT">
+                <devicePort tagName="HDMI Out" type="AUDIO_DEVICE_OUT_AUX_DIGITAL" role="sink" encodedFormats="AUDIO_FORMAT_PCM_16_BIT">
                 </devicePort>
                 <devicePort tagName="Speaker" role="sink" type="AUDIO_DEVICE_OUT_SPEAKER">
                     <gains>
@@ -146,21 +155,25 @@
             <!-- route declaration, i.e. list all available sources for a given sink -->
             <routes>
                 <route type="mix" sink="HDMI Out"
-                       sources="primary output,tunnel pcm,multichannel output,multichannel direct"/>
+                       sources="primary output,direct pcm,tunnel pcm,direct output,tunnel direct output,mmap_no_irq_out"/>
                 <route type="mix" sink="Speaker"
                        sources="primary output,tunnel pcm,BT SCO Headset Mic"/>
                 <route type="mix" sink="Wired Headset"
-                       sources="primary output,BT SCO Headset Mic"/>
+                       sources="primary output,BT SCO Headset Mic,mmap_no_irq_out"/>
                 <route type="mix" sink="Wired Headphones"
-                       sources="primary output,BT SCO Headset Mic"/>
+                       sources="primary output,BT SCO Headset Mic,mmap_no_irq_out"/>
                 <route type="mix" sink="primary input"
                        sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic,BT SCO Headset Mic"/>
+                <route type="mix" sink="BT SCO"
+                       sources="primary output,BT SCO Headset Mic"/>
+                <route type="mix" sink="BT SCO Headset"
+                       sources="primary output,BT SCO Headset Mic"/>
                 <route type="mix" sink="BT A2DP Out"
-                       sources="primary output,tunnel a2dp,a2dp direct"/>
+                       sources="primary output,tunnel a2dp,mmap_no_irq_out"/>
                 <route type="mix" sink="BT A2DP Headphones"
-                       sources="primary output,tunnel a2dp,a2dp direct"/>
+                       sources="primary output,tunnel a2dp,mmap_no_irq_out"/>
                 <route type="mix" sink="BT A2DP Speaker"
-                       sources="primary output,tunnel a2dp,a2dp direct"/>
+                       sources="primary output,tunnel a2dp,mmap_no_irq_out"/>
             </routes>
 
         </module>
@@ -177,6 +190,9 @@
         <!-- MSD Audio HAL (optional) -->
         <!-- <xi:include href="msd_audio_policy_configuration.xml"/> -->
 
+        <!-- Audio Proxy HAL -->
+        <xi:include href="audio_proxy_policy_configuration.xml"/>
+
     </modules>
     <!-- End of Modules section -->
 
@@ -189,8 +205,19 @@
 
     <!-- Surround Sound configuration -->
 
-    <xi:include href="surround_sound_configuration_5_0.xml"/>
-
+    <surroundSound>
+    <!-- Each of the listed formats gets an entry in Surround Settings dialog on TV devices.
+         There must be a corresponding Java ENCODING_... contant defined in AudioFormat.java,
+         and a display name defined in AudioFormat.toDisplayName. For the formats that don't
+         need a dedicated Surrond Settings dialog entry, a subformats list has to be used. -->
+        <formats>
+        <format name="AUDIO_FORMAT_AC3" />
+        <format name="AUDIO_FORMAT_E_AC3" />
+        <format name="AUDIO_FORMAT_E_AC3_JOC" />
+        <format name="AUDIO_FORMAT_DTS" />
+        <format name="AUDIO_FORMAT_AAC_LC" subformats="AUDIO_FORMAT_AAC_HE_V1 AUDIO_FORMAT_AAC_HE_V2 AUDIO_FORMAT_AAC_ELD AUDIO_FORMAT_AAC_XHE" />
+        </formats>
+    </surroundSound>
     <!-- End of Surround Sound configuration -->
 
 </audioPolicyConfiguration>
