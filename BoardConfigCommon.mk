@@ -47,6 +47,7 @@ BOARD_SUPER_PARTITION_GROUPS := amlogic_dynamic_partitions
 BUILDING_SUPER_EMPTY_IMAGE := true
 
 ## Properties
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
