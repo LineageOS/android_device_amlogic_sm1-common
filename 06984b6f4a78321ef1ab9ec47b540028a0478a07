@@ -94,6 +94,30 @@
       },
       "revId": "06984b6f4a78321ef1ab9ec47b540028a0478a07",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "be913466_66237dde",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-10-11T19:34:05Z",
+      "side": 0,
+      "message": "done, it\u0027s built now, and the impl is ``vendor/bin/hw/android.hardware.bluetooth@1.0-impl`` lol",
+      "parentUuid": "86a9ec8b_1a9697e9",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 63
+      },
+      "revId": "06984b6f4a78321ef1ab9ec47b540028a0478a07",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
