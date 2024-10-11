@@ -5,10 +5,8 @@
 #
 
 ifneq ($(filter sm1,$(TARGET_AMLOGIC_SOC)),)
-ifneq ($(TARGET_USES_P_MODULES),true)
 
 LOCAL_PATH := $(call my-dir)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
-endif
 endif
