@@ -64,9 +64,9 @@ vendor/etc/init/android.hardware.graphics.composer@2.4-service.droidlogic.rc|689
 vendor/etc/vintf/manifest/android.hardware.graphics.composer@2.4-service.droidlogic.xml|d8c4e120e0b771b05bb38c3cfe91d983e511c7ea
 vendor/lib/android.hardware.graphics.composer@2.1-resources-vendor.so|62eba15c9159c9f8b3a071a8efc58106b5cc2737
 vendor/lib/android.hardware.graphics.composer@2.2-resources-vendor.so|01fc678f2966779cc3a5c3a7d1d156c8d0a67572
-vendor/lib/hw/hwcomposer.amlogic.so|1822dc9b6ece03c5b6fda4a70fcba8dde0b98812|03cb651f9ede2c1ff05bdc52fc03ff557e110ed2
+vendor/lib/hw/hwcomposer.amlogic.so|1822dc9b6ece03c5b6fda4a70fcba8dde0b98812|5a43e7e80d4d653af4d3fef68675d3548999a72d
 vendor/lib/libmeson_display_adapter_remote.so|e0ef6a547fe8f7e53c3a8103b76b6a62848ea38c
-vendor/lib/libmeson_display_service.so|1c6a3a233620847635f788eff203d263c18b4e57|95e9095180402556b41727132f0b2926eca1ae11
+vendor/lib/libmeson_display_service.so|1c6a3a233620847635f788eff203d263c18b4e57|e21a9867ea3d3b49db4f95c32932bdbb91fc665c
 vendor/lib/libvideotunnel.so|540f2161f82b069f1802413aa5407bd17238b7ef
 vendor/lib/vendor.amlogic.display.meson_display_ipc@1.0.so|662c72f559599d6199db30f3882ce6dcaf81d53e
 
@@ -153,7 +153,7 @@ vendor/etc/seccomp_policy/mediaextractor.policy
 vendor/etc/seccomp_policy/mediaswcodec.policy
 
 ## systemcontrol - Recovery
-recovery/root/system/bin/systemcontrol_static|f4ad06b9486cbe9d4a67fa3c2b55a1e821183f8e
+recovery/root/system/bin/systemcontrol_static|f22ccf670e797938082033955623954c13e9955f
 
 ## systemcontrol - Vendor - from sabrina_prod_stable-user 12 STTE 240615 007 12033466 release-keys
 vendor/bin/hdcp_tx22|7db5ef22d8417586f900f0e246f6d22b3e0dc25f
